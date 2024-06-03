@@ -58,8 +58,8 @@ const CreateForm = () => {
   };
 
   return (
-    <div>
-      <Button onClick={() => setOpenDialog(true)}>+ Create Form</Button>
+    <div >
+      <Button className="w-full" onClick={() => setOpenDialog(true)}>+ Create Form</Button>
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent>
           <DialogHeader>

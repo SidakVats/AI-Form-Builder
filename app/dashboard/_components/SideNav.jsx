@@ -10,6 +10,7 @@ import { LibraryBig, LineChart, MessageSquare, Shield } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import CreateForm from "./CreateForm";
 
 function SideNav() {
   const menuList = [
@@ -20,19 +21,13 @@ function SideNav() {
       path: "/dashboard",
     },
     {
-      id: 1,
+      id: 2,
       name: "Responses",
       icon: MessageSquare,
       path: "/dashboard/responses",
     },
     {
-      id: 1,
-      name: "Analytics",
-      icon: LineChart,
-      path: "/dashboard/analytics",
-    },
-    {
-      id: 1,
+      id: 3,
       name: "Upgrade",
       icon: Shield,
       path: "/dashboard/upgrade",
@@ -80,7 +75,8 @@ function SideNav() {
         ))}
       </div>
       <div className="fixed bottom-7 p-6 w-64 ">
-        <Button className="w-full">+ Create Form</Button>
+        <CreateForm/>
+        {/* <Button className="w-full">+ Create Form</Button> */}
         <div className="my-7">
           <Progress value={PercFileCreated} />
           <h2 className="text-sm mt-2 text-gray-600">
