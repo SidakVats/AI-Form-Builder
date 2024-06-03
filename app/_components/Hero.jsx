@@ -42,7 +42,7 @@ function Hero() {
       </div>
       {/* <img src='/grid.svg' className=' absolute w-full h-[400px] '/> */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-56 ">
+        <div className="mx-auto max-w-screen-xl px-4 pt-56 pb-28 ">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">How it Works</h2>
 
