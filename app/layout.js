@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./_components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
+import ScrollTop from "./_components/ScroolTop";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Header/>
         <Toaster />
         {children}
+        <ScrollTop/>
        
         </body>
     </html></ClerkProvider>

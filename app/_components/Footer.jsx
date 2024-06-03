@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           </div>
 
           <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
-            Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()}. All rights reserved @ <span className="text-primary"><Link href={"https://www.sidakvats.in/"} target="_blank">www.sidakvats.in</Link></span>
           </p>
         </div>
       </div>
