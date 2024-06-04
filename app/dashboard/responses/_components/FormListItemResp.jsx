@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { db } from "@/configs";
 import { userResponses } from "@/configs/schema";
 import { eq } from "drizzle-orm";
-import { Loader2 } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, Loader2 } from "lucide-react";
 import React, { useState } from "react";
+
+
 import * as XLSX from "xlsx";
 function FormListItemResp({ jsonForm, formRecord }) {
   const [loading, setLoading] = useState(false);
@@ -40,13 +42,13 @@ function FormListItemResp({ jsonForm, formRecord }) {
   };
 
   return (
-    <div className="border shadow-sm rounded-lg p-4 my-5">
+    <div className="border shadow-md rounded-lg p-4 my-5 hover:shadow-lg">
       <h2 className="text-lg text-black">{jsonForm?.formTitle}</h2>
       <h2 className="text-sm text-gray-500">{jsonForm?.formHeading}</h2>
       <hr className="my-4"></hr>
-      <div className="flex justify-between items-center">
-        <h2 className="text-sm">
-          <strong>45</strong> Responses
+      <div className="flex justify-between items-center ">
+        <h2 className="text-sm flex gap-2 items-center">
+          Export To Excle <ArrowBigRight/>
         </h2>
         <Button
           className=""

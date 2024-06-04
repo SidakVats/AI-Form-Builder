@@ -42,7 +42,7 @@ const FormListItem = ({ formRecord, jsonForm, refreshData }) => {
     }
   };
   return (
-    <div className="border shadow-sm rounded-lg p-4">
+    <div className="border shadow-md rounded-lg p-4 hover:shadow-lg">
       <div className="flex justify-between">
         <h2></h2>
 
