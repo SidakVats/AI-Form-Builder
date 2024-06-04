@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Example = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -36,41 +38,37 @@ export const Example = () => {
           -World Examples
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-        Explore a variety of sample forms generated from straightforward prompts. Our AI makes it easy to create customized forms for any purpose.
+          Explore a variety of sample forms generated from straightforward
+          prompts. Our AI makes it easy to create customized forms for any
+          purpose.
         </p>
       </div>
       <div className="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
         <div className="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-deep-purple-accent-100 hover:-translate-y-2">
-          <div className="flex items-center mb-2">
-            <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-deep-purple-accent-400">
-              1
-            </p>
+          <div className="flex items-center mb-2 gap-3">
+            <Image src="./one.svg" alt="one svg" width={25} height={10}/>
             <p className="text-lg font-bold leading-5">Example 1</p>
           </div>
           <p className="text-sm text-gray-900">
-          Create a customer feedback survey for my restaurant.
+            Create a customer feedback survey for my restaurant.
           </p>
         </div>
         <div className="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-deep-purple-accent-200 hover:-translate-y-2">
-          <div className="flex items-center mb-2">
-            <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-deep-purple-accent-400">
-              2
-            </p>
+          <div className="flex items-center mb-2 gap-3">
+          <Image src="./two.svg" alt="two svg" width={25} height={10}/>
             <p className="text-lg font-bold leading-5">Example 2</p>
           </div>
           <p className="text-sm text-gray-900">
-          Design a job application form for a software developer position.
+            Design a job application form for a software developer position.
           </p>
         </div>
         <div className="relative p-5 duration-300 transform bg-white border-2 rounded shadow-sm border-deep-purple-accent-700 hover:-translate-y-2">
-          <div className="flex items-center mb-2">
-            <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-deep-purple-accent-400">
-              3
-            </p>
+          <div className="flex items-center mb-2 gap-3">
+          <Image src="./three.svg" alt="three svg" width={25} height={10}/>
             <p className="text-lg font-bold leading-5">Example 3</p>
           </div>
           <p className="text-sm text-gray-900">
-          Generate an event registration form for a charity marathon
+            Generate an event registration form for a charity marathon
           </p>
           <p className="absolute top-0 right-0 flex items-center justify-center w-8 h-8 -mt-4 -mr-4 font-bold rounded-full bg-deep-purple-accent-400 sm:-mt-5 sm:-mr-5 sm:w-10 sm:h-10">
             <svg

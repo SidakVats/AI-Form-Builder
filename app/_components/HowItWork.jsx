@@ -18,10 +18,7 @@ const HowItWork = () => {
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <a
-              className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-primary/15"
-              href="#"
-            >
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-primary/15">
               <AtomIcon className="h-8 w-8" />
 
               <h2 className="mt-4 text-xl font-bold text-black">
@@ -32,12 +29,9 @@ const HowItWork = () => {
                 Kickstart Your Form Creation: Simply describe your needs and let
                 our AI handle the rest.
               </p>
-            </a>
+            </div>
 
-            <a
-              className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-primary/15"
-              href="#"
-            >
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-primary/15">
               <Edit className="h-8 w-8" />
 
               <h2 className="mt-4 text-xl font-bold text-black">
@@ -48,12 +42,9 @@ const HowItWork = () => {
                 Customize with Ease: Fine-tune your form to perfection with our
                 intuitive editor.
               </p>
-            </a>
+            </div>
 
-            <a
-              className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/15"
-              href="#"
-            >
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/15">
               <Share2 className="h-8 w-8" />
 
               <h2 className="mt-4 text-xl font-bold text-black">
@@ -64,7 +55,7 @@ const HowItWork = () => {
                 Launch and Collect: Share your form instantly and gather
                 responses seamlessly.
               </p>
-            </a>
+            </div>
           </div>
 
           {/* <div className="mt-10">
@@ -217,7 +208,10 @@ const HowItWork = () => {
             </div>
           </div> */}
 
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 rounded-xl mt-10 border border-gray-800 shadow-xl transition hover:border-primary/10 hover:shadow-primary/15">
+          <div
+            className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 rounded-xl mt-10 border border-gray-800 shadow-xl transition hover:border-primary/10 hover:shadow-primary/15"
+            id="how"
+          >
             <div>More Detailed steps:</div>
             <div className="grid gap-6 row-gap-10 lg:grid-cols-2">
               <div className="lg:py-6 lg:pr-16">
@@ -254,7 +248,8 @@ const HowItWork = () => {
                   <div className="pt-1 pb-8">
                     <p className="mb-2 text-lg font-bold">Step 1</p>
                     <p className="text-gray-700">
-                      Click on <strong>Get Started</strong> and login first.
+                      Click on the <strong>Get Started</strong> button and
+                      follow the prompts to register for a new account.
                     </p>
                   </div>
                 </div>
@@ -291,8 +286,9 @@ const HowItWork = () => {
                   <div className="pt-1 pb-8">
                     <p className="mb-2 text-lg font-bold">Step 2</p>
                     <p className="text-gray-700">
-                      After Login go to <strong>Dashboard</strong> page (on top
-                      right of navbar)
+                      Once you've created your account, enter your login
+                      credentials and click <strong>Log In</strong> to access
+                      the dashboard.
                     </p>
                   </div>
                 </div>
@@ -329,7 +325,8 @@ const HowItWork = () => {
                   <div className="pt-1 pb-8">
                     <p className="mb-2 text-lg font-bold">Step 3</p>
                     <p className="text-gray-700">
-                      Click on <strong>+Create Form</strong> Button
+                      Locate the <strong>Dashboard</strong> page, typically
+                      found in the top right corner of the navigation bar.
                     </p>
                   </div>
                 </div>
@@ -366,10 +363,46 @@ const HowItWork = () => {
                   <div className="pt-1 pb-8">
                     <p className="mb-2 text-lg font-bold">Step 4</p>
                     <p className="text-gray-700">
-                      Write your <strong>prompt</strong> for your form. <br />
-                      Example: <br />
-                      Create a customer feedback survey for my restaurant. Must
-                      have 10 input fields.
+                      Click on the button labeled <strong>+Create Form</strong>{" "}
+                      to begin building your first form.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex flex-col items-center mr-4">
+                    <div>
+                      <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                        <svg
+                          className="w-4 text-gray-600"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          viewBox="0 0 24 24"
+                        >
+                          <line
+                            fill="none"
+                            strokeMiterlimit="10"
+                            x1="12"
+                            y1="2"
+                            x2="12"
+                            y2="22"
+                          />
+                          <polyline
+                            fill="none"
+                            strokeMiterlimit="10"
+                            points="19,15 12,22 5,15"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="w-px h-full bg-gray-300" />
+                  </div>
+                  <div className="pt-1 pb-8">
+                    <p className="mb-2 text-lg font-bold">Step 5</p>
+                    <p className="text-gray-700">
+                      Enter a clear and concise prompt that describes the
+                      purpose of your form.
                     </p>
                   </div>
                 </div>
@@ -396,7 +429,7 @@ const HowItWork = () => {
                   </div>
                   <div className="pt-1">
                     <p className="mb-2 text-lg font-bold">Success</p>
-                    <p className="text-gray-700" />
+                    <p className="text-gray-700"></p>
                   </div>
                 </div>
               </div>
@@ -413,7 +446,7 @@ const HowItWork = () => {
           <div className="mt-12 text-center">
             <a
               href="/sign-in"
-              className="inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-primary/90 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-primary/90 focus:outline-none  active:scale-90"
             >
               Get Started Today
             </a>

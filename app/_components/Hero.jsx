@@ -25,15 +25,15 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
-              className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-purple-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+              className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primary/95 focus:outline-none active:scale-90 transition-all duration-150 sm:w-auto"
               href=""
             >
               + Create AI Form
             </Link>
 
             <Link
-              className="block w-full rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-purple-600 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-              href=""
+              className="block w-full rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-primary/95 focus:outline-none active:scale-90 sm:w-auto border-2 transition-all duration-150 border-[#eaeaea]"
+              href="#how"
             >
               Learn More
             </Link>
