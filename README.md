@@ -60,8 +60,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 You can find project pictures in the `public` folder of this repository. Here are a few example paths:
 
-- `./border.png`
-- `public/images/form-builder-2.png`
+- `public/clerk.png`
 - `public/images/form-builder-3.png`
 
 Feel free to replace these paths with actual images from your project for better visualization.
