@@ -5,7 +5,7 @@ const HowItWork = () => {
   return (
     <div>
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 pt-56 pb-28 ">
+        <div className="mx-auto max-w-screen-xl px-4 pt-56 pb-28 bg-white">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">How it Works</h2>
 
