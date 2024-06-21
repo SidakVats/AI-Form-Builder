@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.max_padd_container {
+  @apply mx-auto max-w-[1440px] px-6 lg:px-20;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

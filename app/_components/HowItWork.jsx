@@ -6,6 +6,8 @@ const HowItWork = () => {
     <div>
       <section>
         <div className="mx-auto  px-4 pt-56 pb-28 bg-white">
+
+          <div className="max_padd_container">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">How it Works</h2>
 
@@ -450,6 +452,7 @@ const HowItWork = () => {
             >
               Get Started Today
             </a>
+          </div>
           </div>
         </div>
       </section>
